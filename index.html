@@ -33,21 +33,24 @@
         <div class="container-floating" class="space-b">
             <h1 class="align-c extra-padding" >Cash Register Manager</h1>
         </div>
-        <div class="space-b">
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Enter the bill amount</label>
+        <div class="space-b"   >
+            <div class="form-floating mb-3 billRecieved">
+                <input type="text" class="form-control" id="floatingInput"  placeholder="name@example.com">
+
+                <label for="floatingInput">Enter the bill amount and click on "Next" to proceed</label>
               </div>
-              <button type="button" class="btn btn-outline-primary">next</button>
+              <button type="button" class="btn btn-outline-primary" onclick="getBillAmount()" >next</button>
         </div>
-        <div class="space-b">
-            <div class="form-floating mb-3">
+        <h2  class="align-c extra-padding" id="headingh2"><h2>
+        <div class="space-b" id="cash-amount">
+            <div class="form-floating mb-3 billRecievedd">
                 <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Enter the cash amount you have</label>
               </div>
-              <button type="button" class="btn btn-outline-success">submit</button>
+              <button type="button" class="btn btn-outline-success" onclick="getCashAmount()">submit</button>
         </div>
-        <div class="space-b">
+        <h2  class="align-c extra-padding" id="headingh3"><h2></h2>
+        <div class="space-b"id="table" >
             <table class="table table-striped ">
                 <thead class="table-dark">
                     <tr>
@@ -64,18 +67,19 @@
                 <thead>
                     <tr>
                        <th>No.of Notes</th>
-                       <th>0</th>
-                       <th>0</th>
-                       <th>0</th>
-                       <th>0</th>
-                       <th>0</th>
-                       <th>0</th>
-                       <th>0</th>
+                       <th id="twoth">0</th>
+                       <th id="fiveh">0</th>
+                       <th id="hun">0</th>
+                       <th id="twen">0</th>
+                       <th id="ten">0</th>
+                       <th id="five">0</th>
+                       <th id="one">0</th>
                      </tr>   
                 </thead>
             </table>
         </div>
 
     </div>
+<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
