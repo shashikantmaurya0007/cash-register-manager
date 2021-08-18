@@ -1,0 +1,51 @@
+:root {
+    --primary-color: #352A2A;
+    --button-color: #952B2B;
+}
+
+body {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--button-color);
+    width: 4rem;
+    color: white;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+#main {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    margin-top: 1rem;
+    max-width: 100%;
+}
+
+table thead tr th {
+    border: 3px solid black;
+    border-radius: 2px;
+}
+
+#social-media {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgray;
+}
