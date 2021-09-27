@@ -2,30 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-    <div id=main>
-
+    <div id="main">
         <div id="container">
             <div id="social-media">
-                <div> <a href="https://github.com/shashikantmaurya0007/cash-register-manager"><i class="fa fa-git"></i></a></div>
+                <div>
+                    <a href="https://github.com/shashikantmaurya0007/cash-register-manager"><i class="fa fa-git"></i
+            ></a>
+                </div>
                 <div>
                     <a href="#"> <i class="fa fa-instagram"></i></a>
                 </div>
-                <div> <a href="https://www.linkedin.com/in/shashikant-maurya-2aa39668?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BFJAeStkzRCa0ZcZzbegBYg%3D%3D"><i class="fa fa-linkedin"></i></a></div>
-
-
-
-
+                <div>
+                    <a href="https://www.linkedin.com/in/shashikant-maurya-2aa39668?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BFJAeStkzRCa0ZcZzbegBYg%3D%3D"><i class="fa fa-linkedin"></i
+            ></a>
+                </div>
             </div>
             <div id="heading">
                 <h1>Cash Register App</h1>
@@ -33,22 +34,17 @@
 
             <div>
                 <h4>Enter the bill amount</h4>
-                <input type="number" id="billamountInput" min="0" placeholder="enter the bill amount" required>
-                <div> <button onclick="getBillAmount()">check</button></div>
+                <input type="number" id="billamountInput" min="0" placeholder="enter the bill amount" required />
+                <div><button onclick="getBillAmount()">check</button></div>
                 <div id="headingh2"></div>
-
-
             </div>
             <div id="cash-amount">
                 <h4>Enter the cash amount</h4>
-                <input type="number" id="inputCash" placeholder="enter the cash amount" erequired>
+                <input type="number" id="inputCash" placeholder="enter the cash amount" min="0" required />
                 <div><button onclick="getCashAmount()">check</button></div>
 
                 <div id="headingh3"></div>
-
             </div>
-
-
 
             <div id="table">
                 <table>
@@ -78,7 +74,6 @@
                     </thead>
                 </table>
             </div>
-
         </div>
     </div>
     <script type="text/javascript" src="app.js"></script>
