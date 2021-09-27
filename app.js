@@ -1,9 +1,6 @@
 function render() {
-
     document.getElementById("cash-amount").style.display = "none";
     document.getElementById("table").style.display = "none";
-
-
 }
 
 render();
@@ -12,7 +9,6 @@ var billamount;
 var cashamount;
 
 function getBillAmount() {
-
     // console.log(document.querySelector(".billRecieved.form-cotrol"));
 
     billamount = document.querySelector("#billamountInput").value;
@@ -20,14 +16,12 @@ function getBillAmount() {
 
     if (billamount == "" || Number(billamount) < 0) {
         console.log(billamount);
-        document.getElementById("headingh2").innerHTML = "*please enter the bill amount to proceed further*";
+        document.getElementById("headingh2").innerHTML =
+            "*please enter the bill amount to proceed further*";
         return;
     }
     document.getElementById("headingh2").style.display = "none";
     document.getElementById("cash-amount").style.display = "block";
-
-
-
 }
 
 function getCashAmount() {
@@ -35,7 +29,8 @@ function getCashAmount() {
     console.log(cashamount);
     if (cashamount == "") {
         console.log(cashamount, "empty");
-        document.getElementById("headingh3").innerHTML = "*please enter the cash amount*";
+        document.getElementById("headingh3").innerHTML =
+            "*please enter the cash amount*";
         return;
     }
 
@@ -46,11 +41,16 @@ function getCashAmount() {
     diff = parseInt(diff, 10);
     console.log(diff);
     if (diff < 0) {
-        document.getElementById("headingh3").innerHTML = "*sorry you are short of cash!*";
+        document.getElementById("headingh3").innerHTML =
+            "*sorry you are short of cash!*";
         document.getElementById("headingh3").style.display = "block";
         return;
     }
-
+    if (diff == 0) {
+        document.getElementById("headingh3").innerHTML = "*No Cash to Return*";
+        document.getElementById("headingh3").style.display = "block";
+        return;
+    }
     var count = 0;
     if (diff >= 2000) {
         count = Math.floor(diff / 2000);
@@ -88,6 +88,4 @@ function getCashAmount() {
         diff = diff - 1 * count;
     }
     document.getElementById("table").style.display = "block";
-
-
 }

@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #352A2A;
-    --button-color: #952B2B;
+    --primary-color: #352a2a;
+    --button-color: #952b2b;
 }
 
 body {
@@ -48,4 +48,12 @@ table thead tr th {
     display: flex;
     justify-content: space-between;
     background-color: darkgray;
+}
+
+footer {
+    position: absolute;
+    height: inherit;
+    bottom: 40px;
+    display: flex;
+    justify-content: start;
 }
