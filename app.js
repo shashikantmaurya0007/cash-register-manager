@@ -14,10 +14,10 @@ function getBillAmount() {
     billamount = document.querySelector("#billamountInput").value;
     console.log(billamount);
 
-    if (billamount == "" || Number(billamount) < 0) {
+    if (billamount == "" || Number(billamount) <= 0) {
         console.log(billamount);
         document.getElementById("headingh2").innerHTML =
-            "*please enter the bill amount to proceed further*";
+            "*please enter the correct bill amount to proceed further*";
         return;
     }
     document.getElementById("headingh2").style.display = "none";
@@ -27,7 +27,7 @@ function getBillAmount() {
 function getCashAmount() {
     cashamount = document.querySelector("#inputCash").value;
     console.log(cashamount);
-    if (cashamount == "") {
+    if (cashamount == "" || Number(cashamount) <= 0) {
         console.log(cashamount, "empty");
         document.getElementById("headingh3").innerHTML =
             "*please enter the cash amount*";
