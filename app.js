@@ -50,6 +50,13 @@ function getCashAmount() {
     document.getElementById("headingh3").style.display = "none";
 
     var diff = cashamount - billamount;
+    document.getElementById("twoth").innerHTML = 0;
+    document.getElementById("fiveh").innerHTML = 0;
+    document.getElementById("hun").innerHTML = 0;
+    document.getElementById("twen").innerHTML = 0;
+    document.getElementById("ten").innerHTML = 0;
+    document.getElementById("five").innerHTML = 0;
+    document.getElementById("one").innerHTML = 0;
     console.log("difference is" + diff);
     if (billamount < 0) {
         document.getElementById("table").style.display = "none";
