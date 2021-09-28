@@ -40,6 +40,7 @@ function getCashAmount() {
     // }
     if (cashamount == "" || Number(cashamount) <= 0) {
         document.getElementById("headingh3").style.display = "block"; //changes
+        document.getElementById("table").style.display = "none";
 
         console.log(cashamount, "empty");
         document.getElementById("headingh3").innerHTML =
